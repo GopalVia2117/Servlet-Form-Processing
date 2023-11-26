@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Page</title>
+</head>
+<body>
+	<div class="container">
+		<h1>My Form</h1>
+		<form action="register" method="post">
+			<table>
+				<tr>
+					<td>Enter your name:</td>
+					<td><input type="text" name="name" placeholder="Enter here"></td>
+				</tr>
+				<tr>
+					<td>Enter your password:</td>
+					<td><input type="password" name="password" placeholder="Enter here"></td>
+				</tr>
+				<tr>
+					<td>Enter your email:</td>
+					<td><input type="email" name="email" placeholder="Enter here"></td>
+				</tr>
+				
+				<tr>
+					<td>Select Gender</td>
+					<td>
+						<input type="radio" name="gender" id="male" checked
+						value="male"> <label for="male">Male</label>
+						&nbsp;
+						<input type="radio" name="gender" id="female"
+						value="female"> <label for="female">Female</label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Select Course</td>
+					<td>
+						<select name="course">
+							<option value="java">Java</option>
+							<option value="php">PHP</option>
+							<option value="python">Python</option>
+							<option value="android">Android</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input name="consent" type="checkbox" value="checked" id="consent">
+						&nbsp; <label for="consent">Agree terms and conditions</label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<button type="submit">Register</button>
+					</td>
+					
+					<td>
+						<button type="reset">Reset</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
